@@ -1,0 +1,16 @@
+#!/bin/bash
+# File: start-mysql8.0.35-service
+# Editor: PyCharm
+# Author: Austin (From Chengdu.China) https://fairy.host
+# HomePage: https://github.com/AustinFairyland
+# OperatingSystem: Windows 11 Professional Workstation 23H2 Canary Channel
+# CreatedTime: 12/22/2023
+
+# MySQL 8.0.35
+docker run -d --name mysql8.0.35-service \
+  -e TZ=Asia/Shanghai \
+  -e MYSQL_ROOT_PASSWORD="MySQL.pwd:112#." \
+  -p 51002:3306 \
+  -v /home/ace/data/docker/volume/mysql8.0.35_service/data:/var/lib/mysql \
+  --restart always \
+  mysql:8.0.35

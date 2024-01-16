@@ -48,10 +48,16 @@ Development Environment
 
 ---
 
-## Description
+# Description
 
 Austin's repoistory
 
-## Collaborators
+# Contents
+
+- [configuration](./configuration)
+- [script](./script)
+- [daily](./daily)
+
+# Collaborators
 
 - [Austin D](https://github.com/AustinFairyland)
