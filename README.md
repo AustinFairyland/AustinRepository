@@ -54,8 +54,8 @@ Austin's repoistory
 
 # Contents
 
-- [configuration](./configuration)
-- [script](./script)
+- [configuration](./configuration-files)
+- [script](./scripts)
 - [daily](./daily)
 
 # Collaborators
