@@ -1,2 +1,6 @@
+# Dev
 .idea
 
+# Custom
+**/nmap-scan-*.txt
+output
