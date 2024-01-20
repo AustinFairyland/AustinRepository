@@ -10,6 +10,7 @@ services:
   picsur:
     image: ghcr.io/caramelfur/picsur:latest
     container_name: picsur-service
+    network_mode: bridge
     ports:
       - '51004:8080'
     environment:
@@ -32,3 +33,6 @@ services:
       ## Warning: Verbose mode might log sensitive data
       # PICSUR_VERBOSE: "true"
     restart: unless-stopped
+networks:
+  bridge:
+    driver: bridge

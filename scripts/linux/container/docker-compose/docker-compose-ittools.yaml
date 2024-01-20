@@ -10,6 +10,10 @@ services:
   it-tools:
     image: 'corentinth/it-tools:latest'
     container_name: it-tools-service
-    restart: unless-stopped
+    network_mode: bridge
     ports:
       - '51003:80'
+    restart: unless-stopped
+networks:
+  bridge:
+    driver: bridge

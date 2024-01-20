@@ -10,6 +10,10 @@ services:
   redis:
     image: redis:latest
     container_name: redis-standalone-service
+    network_mode: bridge
     ports:
       - "51007:6379"
     command: [ "redis-server", "--requirepass", "Redis.pwd:112#." ]
+networks:
+  bridge:
+    driver: bridge

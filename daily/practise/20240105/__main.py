@@ -18,3 +18,8 @@ sys.dont_write_bytecode = True
 warnings.filterwarnings("ignore")
 if platform.system() == "Windows":
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
+import string
+import secrets
+
+print(type(secrets.token_urlsafe(18)))
