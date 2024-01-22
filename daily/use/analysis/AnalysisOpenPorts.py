@@ -74,16 +74,19 @@ class AnalyseOpenPort:
 
     @classmethod
     def run(cls):
-        mapping_port = cls.__obtain_open_port(
-            "./data/nmap-scan-mapping.fairies.ltd.txt"
-        )
+        # mapping_port = cls.__obtain_open_port(
+        #     "./data/nmap-scan-mapping.fairies.ltd.txt"
+        # )
         cloud_port = cls.__obtain_open_port("./data/nmap-scan-cloud.fairies.ltd.txt")
-        cls.__output_file("mapping.fairies.ltd 开放端口", clear_file=True)
-        for element in mapping_port:
-            cls.__output_file(element)
-        cls.__output_file("cloud.fairies.ltd 开放端口")
-        for element in cloud_port:
-            cls.__output_file(element)
+        print(cloud_port)
+        # cls.__output_file("mapping.fairies.ltd 开放端口", clear_file=True)
+        # for element in mapping_port:
+        #     cls.__output_file(element)
+        # cls.__output_file("cloud.fairies.ltd 开放端口")
+        # for element in cloud_port:
+        #     cls.__output_file(element)
+        port = cls.__obtain_open_port("./data/nmap-scan-mapping.fairies.ltd-20240122.txt")
+        print(port)
 
 
 if __name__ == "__main__":
