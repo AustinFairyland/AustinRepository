@@ -4,3 +4,4 @@
 # Custom
 **/nmap-scan-*.txt
 output
+log[s]
