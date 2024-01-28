@@ -52,7 +52,7 @@ Development Environment
 
 ### 20240105
 
-- [main](./practise/20240105/__main.py)
+- [main](practice/20240105/__main.py)
 
 ## Use
 
