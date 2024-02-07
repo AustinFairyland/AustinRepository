@@ -23,9 +23,8 @@
 # 配置优化
 
 ```shell
-cat > /etc/docker/daemon.json << EOF `# 配置优化`
+cat >/etc/docker/daemon.json `# 配置优化` <<EOF
 {
-    "oom-score-adjust": -1000,
     "log-driver": "json-file",
     "log-opts": {
         "max-size": "100m",
@@ -33,13 +32,10 @@ cat > /etc/docker/daemon.json << EOF `# 配置优化`
     },
     "max-concurrent-downloads": 10,
     "exec-opts": ["native.cgroupdriver=systemd"],
-    "max-concurrent-uploads": 10,
-    "storage-driver": "overlay2",
-    "storage-opts": [
-        "overlay2.override_kernel_check=true"
-    ]
+    "max-concurrent-uploads": 10
 }
 EOF
 
 systemctl start docker && systemctl enable docker && systemctl status docker
+
 ```
