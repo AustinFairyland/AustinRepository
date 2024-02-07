@@ -7,9 +7,11 @@
 # CreatedTime: 12/23/2023
 
 docker run -d --name siyuan-service \
+  --network DockerCustomNet \
+  --ip 173.1.11.5 \
   -e TZ=Asia/Shanghai \
-  -p 51006:6806 \
-  -v /home/ace/data/docker/volume/siyuan_service/workspace:/siyuan/workspace \
+  -p 51005:6806 \
+  -v /home/austin/data/containers/volume/siyuan-service/Austin:/siyuan/Austin \
   --restart always \
-  b3log/siyuan:latest --workspace=/siyuan/workspace/ \
+  b3log/siyuan:latest --workspace=/siyuan/Austin/ \
   --accessAuthCode="Austin.pwd:112#."

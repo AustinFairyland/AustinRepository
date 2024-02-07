@@ -6,8 +6,10 @@
 # OS: Linux Ubuntu 22.04.4 Kernel 6.2.0-36-generic
 # CreatedTime: 2023/12/23
 
-docker run -d --name redis-standalone-service \
+docker run -d --name redis-service \
+  --network DockerCustomNet \
+  --ip 173.1.11.4 \
   -e TZ=Asia/Shanghai \
-  -p 51007:6379 \
+  -p 51004:6379 \
   --restart always \
-  redis:latest redis-server --requirepass "Redis.pwd:112#."
+  redis:7.2.4 redis-server --requirepass "Redis.pwd:112#."

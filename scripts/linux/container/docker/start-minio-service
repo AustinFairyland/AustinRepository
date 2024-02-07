@@ -7,12 +7,14 @@
 # CreatedTime: 2023/12/22
 
 docker run -d --name minio-service \
+  --network DockerCustomNet \
+  --ip 173.1.11.3 \
   -e "MINIO_ROOT_USER=Austin" \
   -e "MINIO_ROOT_PASSWORD=Austin.pwd:112#." \
   -e TZ=Asia/Shanghai \
-  -p 51000:51000 \
-  -p 51001:51001 \
-  -v /home/ace/data/docker/volume/minio_service/data:/data \
-  -v /home/ace/data/docker/volume/minio_service/config:/root/.minio \
+  -p 51002:51002 \
+  -p 51003:51003 \
+  -v /home/austin/data/containers/volume/minio-service/data:/data \
+  -v /home/austin/data/containers/volume/minio-service/config:/root/.minio \
   --restart=always \
-  minio/minio server /data --console-address ":51000" --address ":51001"
+  minio/minio server /data --console-address ":51002" --address ":51003"
