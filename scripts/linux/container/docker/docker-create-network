@@ -6,6 +6,13 @@
 # @OperatingSystem: Windows 11 Professional Workstation 23H2 Canary Channel
 # @CreatedTime: 2024-01-20
 
+# 创建桥接设备
+# sudo ip link add name DockerCustomNet type bridge
+# 启用桥接设备
+# sudo ip link set DockerCustomNet up
+# 确认桥接设备创建成功
+# sudo ip link show DockerCustomNet
+
 docker network create DockerCustomNet \
   --driver bridge \
   --ipam-driver default \
