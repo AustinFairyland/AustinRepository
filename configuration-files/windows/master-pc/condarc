@@ -3,11 +3,11 @@ channels:
   - defaults
   - conda-forge
 show_channel_urls: true
-#envs_dirs:
-#  - E:\Developments\VirtualEnvironments\Conda\envs
+envs_dirs:
+  - D:\Developments\Dependence\Anaconda\Environments
 #  - D:\App\Anaconda\envs
 pkgs_dirs:
-  - E:\Data\Cache\Anaconda
+  - D:\Cache\Anaconda
 #proxy_servers:
 #  http: http://127.0.0.1:65353
 #  https: http://127.0.0.1:65353
