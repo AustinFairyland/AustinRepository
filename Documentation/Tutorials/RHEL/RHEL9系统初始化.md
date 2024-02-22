@@ -18,33 +18,59 @@
 
 ---
 
-## 添加 yum 源
-
-### EPEL(epel-release)
-
-```Shell
-subscription-manager repos --enable codeready-builder-for-rhel-9-$(arch)-rpms
-dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
-```
-
-## 关闭 selinux
+# 1. 关闭 selinux
 
 ```Shell
 # 临时禁用
-setenforce 0
+sudo setenforce 0
 # 永久禁用(需重启)
 sudo sed -i 's/^SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
 sudo sed -i 's/^SELINUX=permissive/SELINUX=disabled/' /etc/selinux/config
 ```
 
-## 安装 Docker
+# 2. 系统订阅
+
+用户切换至 root
+
+```shell
+su - root
+```
+
+添加订阅
+
+```shell
+subscription-manager register --proxy 代理地址 --proxyuser 代理认证用户名 --proxypassword 代理认证密码 --username RedHat用户名 --password RedHat密码 --autosubscribe
+```
+
+查看订阅信息
+
+```shell
+subscription-manager list
+```
+
+一键订阅
+
+```shell
+subscription-manager register --proxy http://mapping.fairies.ltd:65003 --proxyuser Austin --proxypassword Austin0112 --username alice.fairy@email.cn --password Alice0-./ --autosubscribe && subscription-manager list 
+```
+
+# 2. 添加 yum 源
+
+## 2.1 添加 EPEL(epel-release) 源
+
+```Shell
+subscription-manager repos --enable codeready-builder-for-rhel-9-$(arch)-rpms --proxy http://mapping.fairies.ltd:65003 --proxyuser Austin --proxypassword Austin0112
+dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm 
+```
+
+# 4. 安装 Docker
 
 卸载 Podman 和相关工具
 
 ```Shell
 sudo dnf remove podman buildah
 ```
-   
+
 安装 Docker CE
 
 ```Shell
