@@ -1,6 +1,0 @@
-# PHP-FPM FastCGI server
-# network or unix domain socket configurations
-
-upstream php-fpm {
-        server unix:/run/php-fpm/www.sock;
-}

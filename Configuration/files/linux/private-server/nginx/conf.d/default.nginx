@@ -18,7 +18,7 @@ server {
     }
 
     location /share {
-        alias /data/share/;
+        alias /home/austin/data/share;
         # autoindex on;
         if ($request_filename ~* ^.*?\.(pdf|docx|xlsx|pptx|jpg|jpeg|png|gif|svg)$) {
             add_header Content-Disposition: 'p_w_upload;';

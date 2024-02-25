@@ -8,10 +8,10 @@
 
 docker run -d --name nginx-proxy-manger-service \
   -e TZ=Asia/Shanghai \
-  -p 51008:80 \
-  -p 51009:81 \
-  -p 51010:443 \
-  -v /home/ace/data/docker/volume/nginx_proxy_manager_service/data:/data \
-  -v /home/ace/data/docker/volume/nginx_proxy_manager_service/letsencrypt:/etc/letsencrypt \
+  -p 80:80 \
+  -p 51000:81 \
+  -p 443:443 \
+  -v /data/container/volume/nginx-proxy-manager/data:/data \
+  -v /data/container/volume/nginx-proxy-manager/letsencrypt:/etc/letsencrypt \
   --restart always \
   jc21/nginx-proxy-manager:latest

@@ -19,67 +19,29 @@ warnings.filterwarnings("ignore")
 if platform.system() == "Windows":
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
 
-import requests, time
-from lxml import etree
-
-"""
-    url:给定的url
-    save_file_name:为url存储文件
-"""
+from typing import Union
 
 
-def Redirect(url):
-    try:
-        res = requests.get(url, timeout=1)
-        url = res.url
-    except Exception as e:
-        print("", e)
-        time.sleep()
-    return url
+class Comparison:
+
+    @staticmethod
+    def interval_range(integer: Union[int, float], _min: Union[int, float], _max: Union[int, float]) -> bool:
+        if integer.__le__(_max) and integer.__ge__(_min):
+            return True
+        else:
+            return False
 
 
-def requests_for_url(url, save_file_name, file_model):
-    headers = {
-        'pragma': "no-cache",
-        'accept-encoding': "gzip, deflate, br",
-        'accept-language': "zh-CN,zh;q=.",
-        'upgrade-insecure-requests': "",
-        'user-agent': "Mozilla/. (Windows NT .; WOW) AppleWebKit/. (KHTML, like Gecko) Chrome/... Safari/.",
-        'accept': "text/html,application/xhtml+xml,application/xml;q=.,image/webp,image/apng,*/*;q=.",
-        'cache-control': "no-cache",
-        'connection': "keep-alive",
-    }
+class Main:
 
-    try:
-        response = requests.request("GET", url, headers=headers)
-        selector = etree.HTML(response.text, parser=etree.HTMLParser(encoding='utf-'))
-    except Exception as e:
-        print("页面加载失败", e)
-    return_set = set()
-    with open(save_file_name, file_model) as f:
-        try:
-            context = selector.xpath('//a/@href')
-            for i in context:
-                try:
-                    if i[0] == "j":
-                        continue
-                    if i[1] == "/":
-                        # print i
-                        i = url + i.replace("/", "")
-                        f.write(i)
-                        f.write("\n")
-                        return_set.add(i)
-                        # print(len(return_set))
-                        print(len(return_set), context[0], i)
-                except Exception as e:
-                    print("", e)
-        except Exception as e:
-            print("", e)
-        return return_set
+    @staticmethod
+    def run() -> None:
+        port = 52000
+        min_port = 51000
+        max_port = 52999
+        results = Comparison.interval_range(port, min_port, max_port)
+        print(results)
 
 
-if __name__ == '__main__':  # 网页url采集爬虫，给定网址，以及存储文件，将该网页内全部网址采集下，可指定文件存储方式
-    url = "https://www.aks.cn/"
-    save_file_name = "url.txt"
-    return_set = requests_for_url(url, save_file_name, "a")  # “a”:追加
-    print(len(return_set))
+if __name__ == "__main__":
+    Main.run()
