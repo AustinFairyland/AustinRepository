@@ -11,8 +11,9 @@ docker run -d --name halo-service \
   --ip 173.1.11.6 \
   -p 51006:8090 \
   -e TZ=Asia/Shanghai \
-  -v /home/austin/data/containers/volume/halo-service/2.11/data:/root/.halo2 \
-  halohub/halo:2.11 --spring.r2dbc.url=r2dbc:pool:mysql://173.1.11.1:3306/austin_halo \
+  -v /home/austin/data/containers/volume/halo-service/2.13/data:/root/.halo2 \
+  halohub/halo:2.13 \
+  --spring.r2dbc.url=r2dbc:pool:mysql://173.1.11.1:3306/austin_halo \
   --spring.r2dbc.username=austin \
   --spring.r2dbc.password=Austin.pwd:112#. \
   --spring.sql.init.platform=mysql \

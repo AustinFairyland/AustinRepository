@@ -11,7 +11,7 @@ docker run -d --name postgresql-service \
   --network DockerCustomNet \
   --ip 173.1.11.2 \
   -e TZ=Asia/Shanghai \
-  -p 51001:5432 \
+  -p 51002:5432 \
   -v /home/austin/data/containers/volume/postgresql-service/16.1/data:/var/lib/postgresql/data \
   --env-file /home/austin/data/containers/env.d/postgres.env \
   postgres:16.1
