@@ -6,12 +6,11 @@
 # OperatingSystem: Windows 11 Professional Workstation 23H2 Canary Channel
 # CreatedTime: 12/22/2023
 
-# PostgreSQL
 docker run -d --name postgresql-service \
   --network DockerCustomNet \
-  --ip 173.1.11.2 \
+  --ip 173.1.10.2 \
   -e TZ=Asia/Shanghai \
   -p 51002:5432 \
-  -v /home/austin/data/containers/volume/postgresql-service/16.1/data:/var/lib/postgresql/data \
-  --env-file /home/austin/data/containers/env.d/postgres.env \
+  -v /data/containers/volume/postgresql-service/16.1/data:/var/lib/postgresql/data \
+  --env-file /data/containers/env.d/postgresql_16.1.env \
   postgres:16.1
