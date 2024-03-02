@@ -6,13 +6,12 @@
 # OperatingSystem: Windows 11 Professional Workstation 23H2 Canary Channel
 # CreatedTime: 12/22/2023
 
-# MySQL
 docker run -d --name mysql-service \
   --network DockerCustomNet \
-  --ip 173.1.11.1 \
+  --ip 173.1.10.1 \
   -e TZ=Asia/Shanghai \
   -e MYSQL_ROOT_PASSWORD="MySQL.pwd:112#." \
   -p 51001:3306 \
-  -v /home/austin/data/containers/volume/mysql-service/8.0.35/data:/var/lib/mysql \
+  -v /data/containers/volume/mysql-service/8.0.35/data:/var/lib/mysql \
   --restart always \
   mysql:8.0.35
