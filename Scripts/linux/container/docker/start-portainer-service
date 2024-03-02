@@ -6,13 +6,13 @@
 # @OperatingSystem: Windows 11 Professional Workstation 23H2 Canary Channel
 # @CreatedTime: 2024-01-02
 
-docker run -d --name protainer-serivce \
+docker run -d --name protainer-service \
   --network DockerCustomNet \
-  --ip 173.1.11.7 \
+  --ip 173.1.10.7 \
   -e TZ=Asia/Shanghai \
-  -p 51007:9000 \
   -p 51008:8000 \
+  -p 51009:9000 \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  -v /home/austin/data/containers/volume/portainer-service/data:/data \
+  -v /data/containers/volume/portainer-service/latest/data:/data \
   --restart always \
   docker.io/portainer/portainer-ce:latest

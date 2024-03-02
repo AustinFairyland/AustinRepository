@@ -8,13 +8,15 @@
 
 docker run -d --name halo-service \
   --network DockerCustomNet \
-  --ip 173.1.11.6 \
-  -p 51006:8090 \
+  --ip 173.1.10.6 \
   -e TZ=Asia/Shanghai \
-  -v /home/austin/data/containers/volume/halo-service/2.11/data:/root/.halo2 \
-  halohub/halo:2.11 --spring.r2dbc.url=r2dbc:pool:mysql://173.1.11.1:3306/austin_halo \
+  -p 51007:8090 \
+  -v /data/container/volume/halo-service/2.13/data:/root/.halo2 \
+  --restart always \
+  halohub/halo:2.13 \
+  --spring.r2dbc.url=r2dbc:pool:mysql://173.1.10.1/austin_halo \
   --spring.r2dbc.username=austin \
   --spring.r2dbc.password=Austin.pwd:112#. \
   --spring.sql.init.platform=mysql \
-  --halo.external-url=http://blog.fairies.ltd/ \
+  --halo.external-url=http://blog.fairy.host \
   --server.port=8090

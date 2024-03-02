@@ -7,7 +7,7 @@
 # @CreatedTime: 2024-01-16
 
 docker run -d --name vaultwarden-service \
-  -e DOMAIN=https://vaultwarden.cloud.fairies.ltd \
+  -e DOMAIN=https://vaultwarden.service.fairy.host \
   -e LOGIN_RATELIMIT_MAX_BURST=10 \
   -e LOGIN_RATELIMIT_SECONDS=60 \
   -e ADMIN_RATELIMIT_MAX_BURST=10 \
@@ -18,7 +18,7 @@ docker run -d --name vaultwarden-service \
   -e EMERGENCY_ACCESS_ALLOWED=true \
   -e WEB_VAULT_ENABLED=true \
   -e SIGNUPS_ALLOWED=false \
-  -p 51020:80 \
-  -v /home/ace/data/docker/volume/vaultwarden/data:/data \
-  --restart unless-stopped \
+  -p 51007:80 \
+  -v /data/container/volume/vaultwarden-service/data:/data \
+  --restart always \
   vaultwarden/server:latest
