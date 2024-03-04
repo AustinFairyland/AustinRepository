@@ -28,8 +28,8 @@ Austin's repoistory
 
 # Contents
 
-- [configuration](./Configuration)
-- [script](./Scripts)
+- [configuration](./configuration)
+- [script](./script)
 - [daily](./daily)
 
 # Collaborators
