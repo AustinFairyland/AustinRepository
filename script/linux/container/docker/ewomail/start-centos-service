@@ -1,0 +1,20 @@
+#!/bin/bash
+# @File: start-centos-service
+# @Editor: PyCharm
+# @Author: Austin (From Chengdu.China) https://fairy.host
+# @HomePage: https://github.com/AustinFairyland
+# @OperatingSystem: Windows 11 Professional Workstation 23H2 Canary Channel
+# @CreatedTime: 2024-01-19
+
+docker run -idt \
+  -p 25:25 \
+  -p 109:109 \
+  -p 110:110 \
+  -p 143:143 \
+  -p 465:465 \
+  -p 587:587 \
+  -p 993:993 \
+  -p 995:995 \
+  -p 88:80 \
+  -p 8080:8080 \
+  --name ewomail-service centos:centos7

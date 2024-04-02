@@ -1,0 +1,18 @@
+{
+  "Accept": "*/*",
+  "Accept-Encoding": "gzip,deflate,br,zstd",
+  "Accept-Language": "en,zh-CN;q=0.9,zh;q=0.8",
+  "Cache-Control": "no-cache",
+  "Connection": "keep-alive",
+  "Host": "vod.cn-shanghai.aliyuncs.com",
+  "Origin": "https://yun.aura.cn",
+  "Pragma": "no-cache",
+  "Referer": "https://yun.aura.cn/",
+  "Sec-Fetch-Dest": "empty",
+  "Sec-Fetch-Mode": "cors",
+  "Sec-Fetch-Site": "cross-site",
+  "User-Agent": "Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTML,likeGecko)Chrome/120.0.0.0Safari/537.36",
+  "sec-ch-ua": "\"Not_ABrand\";v=\"8\",\"Chromium\";v=\"120\",\"GoogleChrome\";v=\"120\"",
+  "sec-ch-ua-mobile": "?0",
+  "sec-ch-ua-platform": "Windows"
+}
