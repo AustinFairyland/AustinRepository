@@ -30,27 +30,38 @@ class QRCodeApp:
         button_browse = tk.Button(root, text="浏览", command=self.browse_file)
         button_browse.grid(row=1, column=2, padx=10, pady=10)
 
+        # 输入Logo尺寸
+        tk.Label(root, text="Logo尺寸：").grid(row=2, column=0, padx=10, pady=10)
+        self.entry_logo_size = tk.Entry(root, width=10)
+        self.entry_logo_size.grid(row=2, column=1, padx=10, pady=10)
+        self.entry_logo_size.insert(0, "200")  # 默认值为200
+
         # 生成按钮
         button_generate = tk.Button(root, text="生成二维码", command=self.generate_qr)
-        button_generate.grid(row=2, column=1, padx=10, pady=10)
+        button_generate.grid(row=3, column=1, padx=10, pady=10)
 
         # 保存按钮
         button_save = tk.Button(root, text="保存二维码", command=self.save_qr)
-        button_save.grid(row=3, column=1, padx=10, pady=10)
+        button_save.grid(row=4, column=1, padx=10, pady=10)
 
         # 状态标签
         self.lbl_status = tk.Label(root, text="")
-        self.lbl_status.grid(row=4, column=1, padx=10, pady=10)
+        self.lbl_status.grid(row=5, column=1, padx=10, pady=10)
 
         # 二维码显示标签
         self.lbl_qr = tk.Label(root)
-        self.lbl_qr.grid(row=5, column=1, padx=10, pady=20)
+        self.lbl_qr.grid(row=6, column=1, padx=10, pady=20)
 
         self.final_image = None
 
     def generate_qr(self):
         url = self.entry_url.get()
         logo_path = self.entry_logo.get()
+        try:
+            logo_size = int(self.entry_logo_size.get())
+        except ValueError:
+            self.lbl_status.config(text="Logo尺寸必须是一个整数！")
+            return
 
         if not url or not logo_path:
             self.lbl_status.config(text="URL或Logo路径不能为空！")
@@ -60,15 +71,14 @@ class QRCodeApp:
             qr = qrcode.QRCode(
                 version=3,
                 error_correction=qrcode.constants.ERROR_CORRECT_H,
-                box_size=30,
-                border=1,
+                box_size=10,
+                border=4,
             )
             qr.add_data(url)
             qr.make(fit=True)
             img = qr.make_image(fill_color="black", back_color="white").convert('RGB')
 
             logo = Image.open(logo_path).convert("RGBA")
-            logo_size = 200
             logo = logo.resize((logo_size, logo_size), Image.Resampling.LANCZOS)
 
             logo_layer = Image.new("RGBA", img.size)
