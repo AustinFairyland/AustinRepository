@@ -5,3 +5,5 @@
 **/nmap-scan-*.txt
 output
 log[s]
+build
+dist
