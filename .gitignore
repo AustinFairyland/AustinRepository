@@ -7,3 +7,8 @@ output
 log[s]
 build
 dist
+project/**/data
+project/**/conf
+project/**/test
+work
+!work/__main.py
