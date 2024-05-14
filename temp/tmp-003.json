@@ -1,0 +1,38 @@
+[
+  {
+    "id": 175,
+    "name": "equipment_name",
+    "field_type": "varchar",
+    "chname": "设备名称"
+  },
+  {
+    "id": 169,
+    "name": "asset_main_ip",
+    "field_type": "varchar",
+    "chname": "资产主IP"
+  },
+  {
+    "id": 24,
+    "name": "contact_information_responsible",
+    "field_type": "varchar",
+    "chname": "系统维护责任人联系方式"
+  },
+  {
+    "id": 23,
+    "name": "person_in_charge_a",
+    "field_type": "varchar",
+    "chname": "系统维护责任人"
+  },
+  {
+    "id": 22,
+    "name": "responsible_department",
+    "field_type": "varchar",
+    "chname": "系统维护责任单位"
+  },
+  {
+    "id": 1,
+    "name": "system_id",
+    "field_type": "varchar",
+    "chname": "系统编号"
+  }
+]
