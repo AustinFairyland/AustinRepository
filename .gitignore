@@ -1,16 +1,14 @@
-# Dev
+# public
 .idea
 
-# Custom
-**/nmap-scan-*.txt
-output
+# dev
 log[s]
+data
+
+# custom
 build
 dist
-project/**/data
-project/**/conf
-project/**/test
+
+# work
 work
-!work/__main.py
-temp/python/data
 
