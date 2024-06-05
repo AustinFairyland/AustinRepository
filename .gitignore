@@ -12,3 +12,5 @@ project/**/conf
 project/**/test
 work
 !work/__main.py
+temp/python/data
+
