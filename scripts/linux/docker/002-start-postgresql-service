@@ -1,0 +1,49 @@
+#!/bin/bash
+# File: start-postgresql-service
+# Editor: PyCharm
+# Author: Austin (From Chengdu.China) https://fairy.host
+# HomePage: https://github.com/AustinFairyland
+# OperatingSystem: Windows 11 Professional Workstation 23H2 Canary Channel
+# CreatedTime: 12/22/2023
+
+# Terminal output color
+RESET_COLOR="\e[0m"
+RED_COLOR="\e[31m"
+GREEN_COLOR="\e[32m"
+
+CONTAINER_NAME="postgresql-service"
+DOCKER_VOLUME_DIR="/data/container/volume"
+DOCKER_CONTRAINER_ENV="/data/container/env.d"
+LOCAL_POSTGRESQL_DATA_PATH="$DOCKER_VOLUME_DIR/$CONTAINER_NAME/data"
+
+check_directory() {
+  local dir_path=$1
+  if [ -d "$dir_path" ]; then
+    return 0
+  else
+    echo -e "${GREEN_COLOR}Directory ${dir_path} does not exist, creating it${RESET_COLOR}"
+    if mkdir -p "$dir_path"; then
+      echo -e "${GREEN_COLOR}Directory ${dir_path} create success.${RESET_COLOR}"
+      return 0
+    else
+      return 1
+    fi
+  fi
+}
+
+main() {
+  check_directory $LOCAL_POSTGRESQL_DATA_PATH
+
+  if docker run -d --name postgresql-service \
+    --network DockerCustomNet \
+    --ip 173.1.10.2 \
+    --user "$(id -u)":"$(id -g)" \
+    --privileged=true \
+    -e TZ=Asia/Shanghai \
+    -p 51002:5432 \
+    -v "$LOCAL_POSTGRESQL_DATA_PATH":/var/lib/postgresql/data \
+    --env-file "$DOCKER_CONTRAINER_ENV"/postgres.env \
+    postgres:16.1; then
+    echo -e "${GREEN_COLOR}PostgreSQL运行成功...${RESET_COLOR}"
+  fi
+}
