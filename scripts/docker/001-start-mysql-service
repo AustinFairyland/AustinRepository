@@ -60,18 +60,6 @@ main() {
     exit
   fi
 
-  #  docker run -d --name "$CONTAINER_NAME" \
-  #    --network DockerCustomNet \
-  #    --ip 173.1.10.1 \
-  #    --user "$CONTAINER_USER":"$CONTAINER_GROUP" \
-  #    --privileged=true \
-  #    -e TZ=Asia/Shanghai \
-  #    -e MYSQL_ROOT_PASSWORD="PQ,Z0|yiwzVns*HT" \
-  #    -p 51001:3306 \
-  #    -v "$LOCAL_MYSQL_DATA_PATH":/var/lib/mysql \
-  #    --restart always \
-  #    mysql:8.0.35 >/dev/null
-
   local docker_command=(
     "docker"
     "run"
