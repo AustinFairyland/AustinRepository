@@ -60,17 +60,36 @@ main() {
     exit
   fi
 
-  if docker run -d --name "$CONTAINER_NAME" \
-    --network DockerCustomNet \
-    --ip 173.1.10.1 \
-    --user "$CONTAINER_USER":"$CONTAINER_GROUP" \
-    --privileged=true \
-    -e TZ=Asia/Shanghai \
-    -e MYSQL_ROOT_PASSWORD="PQ,Z0|yiwzVns*HT" \
-    -p 51001:3306 \
-    -v "$LOCAL_MYSQL_DATA_PATH":/var/lib/mysql \
-    --restart always \
-    mysql:8.0.35 >/dev/null; then
+  #  docker run -d --name "$CONTAINER_NAME" \
+  #    --network DockerCustomNet \
+  #    --ip 173.1.10.1 \
+  #    --user "$CONTAINER_USER":"$CONTAINER_GROUP" \
+  #    --privileged=true \
+  #    -e TZ=Asia/Shanghai \
+  #    -e MYSQL_ROOT_PASSWORD="PQ,Z0|yiwzVns*HT" \
+  #    -p 51001:3306 \
+  #    -v "$LOCAL_MYSQL_DATA_PATH":/var/lib/mysql \
+  #    --restart always \
+  #    mysql:8.0.35 >/dev/null
+
+  local docker_command=(
+    "docker"
+    "run"
+    "-d"
+    "--name" "$CONTAINER_NAME"
+    "--network" "DockerCustomNet"
+    "--ip" "173.1.10.1"
+    "--user" "$CONTAINER_USER":"$CONTAINER_GROUP"
+    "--privileged=true"
+    "-e" "TZ=Asia/Shanghai"
+    "-e" "MYSQL_ROOT_PASSWORD=\"PQ,Z0|yiwzVns*HT\""
+    "-p" "51001:3306"
+    "-v" "${LOCAL_MYSQL_DATA_PATH}:/var/lib/mysql"
+    "--restart" "always"
+    "mysql:8.0.35"
+  )
+
+  if "${docker_command[@]}"; then
     echo -e "${GREEN_COLOR}MySQL running...${RESET_COLOR}"
   else
     echo -e "${RED_COLOR}MySQL start failed...${RESET_COLOR}"
