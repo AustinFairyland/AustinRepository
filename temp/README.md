@@ -1,10 +1,10 @@
-# personal
+# Project Temporary Folder Description
 
 > @software: PyCharm  
 > @author: [Lionel Johnson](https://fairy.host)  
 > @contact: [Blog](https://blog.fairy.host/) | [Github](https://github.com/PrettiestFairy) | [Telegram](https://t.me/FairylandFuture)  
 > @organization: [Github·FairylandFuture](https://github.com/FairylandFuture)  
-> @since: 2024-06-22 16:53:54 UTC+8
+> @since: 2024-06-22 14:33:26 UTC+8
 
 [![Author](https://img.shields.io/badge/Author-Lionel_Johnson-orange)](https://t.me/FairylandFuture) [![github](https://img.shields.io/badge/Github-PrettiestFairy-green)](https://github.com/PrettiestFairy) [![GitBook](https://img.shields.io/badge/Gitbook-Interesting_book-green)](https://interestingbooks.gitbook.io/) [![Editor](https://img.shields.io/badge/Editor-Jetbrains_PyCharm-yellow)](https://www.jetbrains.com/pycharm) [![Language](https://img.shields.io/badge/Language-Markdown-orange)](https://en.wikipedia.org/wiki/Markdown) [![Version](https://img.shields.io/badge/Version-Release-blue)]() [![Docs](https://img.shields.io/badge/Docs-Passing-brightgreen)]() [![Type](https://img.shields.io/badge/Type-Document-blue)]() [![Wakatime](https://wakatime.com/badge/user/fa851759-c657-4b1e-8bcb-3ec3a693a2cd.svg)](https://wakatime.com/@fa851759-c657-4b1e-8bcb-3ec3a693a2cd) [![Sign](https://img.shields.io/badge/%E7%AD%89%E6%88%91%E4%BB%A3%E7%A0%81%E7%BC%96%E6%88%90-%E5%A8%B6%E4%BD%A0%E4%B8%BA%E5%A6%BB%E5%8F%AF%E5%A5%BD-red)](https://fairy.host)
 
@@ -16,14 +16,26 @@ Development Environment
 
 ---
 
-# Lionel Johnson's Personal Project
+[English](README.md) | [简体中文](README-zh_CN.md)
 
-Lionel Johnson's personal repoistory
+## English Description
 
-# Contents
+### Overview
 
-Tips: Wait fill up
+This directory, named `temp`, is primarily used for storing temporary or confidential files within the project. These might include, but are not limited to, build intermediates, debug logs, sensitive configuration data, etc.
 
-# Collaborators
+### File Management
 
-- [Lionel Johnson](https://github.com/PrettiestFairy)
+- All files located in this directory should be promptly cleaned up after project completion or version release.
+- For confidential files, encryption and access control must be implemented in accordance with company security policies.
+- Regularly check this directory to remove any useless or outdated files, ensuring that the directory is clean and secure.
+
+### Precautions
+
+- Please do not store persistent data in this directory.
+- When accessing files in this directory, make sure you have the appropriate permissions and comply with relevant security protocols.
+
+---
+
+Thank you for adhering to the usage guidelines of this directory and helping maintain the security and efficiency of the project.
+
