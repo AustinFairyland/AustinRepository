@@ -1,0 +1,28 @@
+{
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "10m",
+    "max-file": "1"
+  },
+  "storage-driver": "overlay2",
+  "default-ulimits": {
+    "nofile": {
+      "Name": "nofile",
+      "Soft": 1024,
+      "Hard": 2048
+    }
+  },
+  "debug": true,
+  "live-restore": true,
+  "experimental": true,
+  "features": {
+    "buildkit": true
+  },
+  "registry-mirrors": [
+    "https://registry.docker-cn.com",
+    "http://hub-mirror.c.163.com",
+    "https://docker.mirrors.ustc.edu.cn",
+    "https://cr.console.aliyun.com",
+    "https://mirror.ccs.tencentyun.com"
+  ]
+}

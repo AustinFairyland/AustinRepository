@@ -1,10 +1,10 @@
-# personal
+# 项目临时文件夹说明
 
 > @software: PyCharm  
 > @author: [Lionel Johnson](https://fairy.host)  
 > @contact: [Blog](https://blog.fairy.host/) | [Github](https://github.com/PrettiestFairy) | [Telegram](https://t.me/FairylandFuture)  
 > @organization: [Github·FairylandFuture](https://github.com/FairylandFuture)  
-> @since: 2024-06-22 16:53:54 UTC+8
+> @since: 2024-06-22 14:52:21 UTC+8
 
 [![Author](https://img.shields.io/badge/Author-Lionel_Johnson-orange)](https://t.me/FairylandFuture) [![github](https://img.shields.io/badge/Github-PrettiestFairy-green)](https://github.com/PrettiestFairy) [![GitBook](https://img.shields.io/badge/Gitbook-Interesting_book-green)](https://interestingbooks.gitbook.io/) [![Editor](https://img.shields.io/badge/Editor-Jetbrains_PyCharm-yellow)](https://www.jetbrains.com/pycharm) [![Language](https://img.shields.io/badge/Language-Markdown-orange)](https://en.wikipedia.org/wiki/Markdown) [![Version](https://img.shields.io/badge/Version-Release-blue)]() [![Docs](https://img.shields.io/badge/Docs-Passing-brightgreen)]() [![Type](https://img.shields.io/badge/Type-Document-blue)]() [![Wakatime](https://wakatime.com/badge/user/fa851759-c657-4b1e-8bcb-3ec3a693a2cd.svg)](https://wakatime.com/@fa851759-c657-4b1e-8bcb-3ec3a693a2cd) [![Sign](https://img.shields.io/badge/%E7%AD%89%E6%88%91%E4%BB%A3%E7%A0%81%E7%BC%96%E6%88%90-%E5%A8%B6%E4%BD%A0%E4%B8%BA%E5%A6%BB%E5%8F%AF%E5%A5%BD-red)](https://fairy.host)
 
@@ -16,14 +16,25 @@ Development Environment
 
 ---
 
-# Lionel Johnson's Personal Project
+[English](README.md) | [简体中文](README-zh_CN.md)
 
-Lionel Johnson's personal repoistory
+## 中文说明
 
-# Contents
+### 简介
 
-Tips: Wait fill up
+本目录称为 `temp`，主要用于存放项目中的临时文件或涉密文件。这些文件可能包括但不限于编译中间产物、调试日志、敏感配置信息等。
 
-# Collaborators
+### 文件管理
 
-- [Lionel Johnson](https://github.com/PrettiestFairy)
+- 所有存放于此目录的文件在项目完成或版本发布后应及时清理。
+- 对于涉密文件，必须按照公司的安全规定进行加密和访问控制。
+- 定期检查此目录，清理无用或过时的文件，确保目录干净、安全。
+
+### 注意事项
+
+- 请不要在此目录下存放持久性数据。
+- 访问此目录的文件时，请确保你有相应的权限，并遵守相关的安全协议。
+
+---
+
+感谢您遵守本目录的使用规范，共同维护项目的安全和效率。

@@ -4,6 +4,9 @@
 # dev
 log[s]
 data
+temp/*
+!temp/*.md
+
 
 # custom
 build
