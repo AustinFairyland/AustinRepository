@@ -37,13 +37,12 @@ main() {
     exit
   fi
 
-  if [ "$SUDO_USER" = "root" ]; then
+  if [ "$SUDO_USER" = "root" ] || [ "$USER" == "root" ]; then
     echo -e "${RED_COLOR}Running as root, creating docker-run user and group...${RESET_COLOR}"
-    useradd -M -N -s /sbin/nologin -g docker docker-run >>/dev/null
-    usermod -aG docker docker-run
-    usermod -aG docker "$SUDO_USER"
-    CONTAINER_USER=$(id -u docker-run)
-    CONTAINER_GROUP=$(id -g docker)
+    useradd -M -N -s /sbin/nologin -g docker docker-executor >>/dev/null
+    usermod -aG docker docker-executor
+    CONTAINER_USER=$(id -u docker-executor)
+    CONTAINER_GROUP=$(id -g docker-executor)
   else
     CONTAINER_USER=$(id -u "$SUDO_USER")
     CONTAINER_GROUP=$(id -g "$SUDO_USER")
@@ -70,7 +69,7 @@ main() {
     "--user" "$CONTAINER_USER":"$CONTAINER_GROUP"
     "--privileged=true"
     "-e" "TZ=Asia/Shanghai"
-    "-e" "MYSQL_ROOT_PASSWORD=\"PQ,Z0|yiwzVns*HT\""
+    "-e" "MYSQL_ROOT_PASSWORD=PQ,Z0|yiwzVns*HT"
     "-p" "51001:3306"
     "-v" "${LOCAL_MYSQL_DATA_PATH}:/var/lib/mysql"
     "--restart" "always"

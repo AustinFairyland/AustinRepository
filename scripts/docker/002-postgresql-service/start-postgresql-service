@@ -11,12 +11,18 @@ RESET_COLOR="\e[0m"
 RED_COLOR="\e[31m"
 GREEN_COLOR="\e[32m"
 
+EXECUTE_PATH="$(dirname "$0")"
+
 CONTAINER_NAME="postgresql-service"
-DOCKER_VOLUME_DIR="/data/container/volume"
-DOCKER_CONTRAINER_ENV="/data/container/env.d"
-LOCAL_POSTGRESQL_DATA_PATH="${DOCKER_VOLUME_DIR}/${CONTAINER_NAME}/data"
 CONTAINER_USER="$(id -u)"
 CONTAINER_GROUP="$(id -g)"
+DOCKER_VOLUME_DIR="/data/container/volume"
+DOCKER_CONTRAINER_ENV="/data/container/env.d"
+
+POSTGRESQL_CONF_FILE="${EXECUTE_PATH}/conf.d/postgresql.conf"
+
+LOCAL_POSTGRESQL_CONF_PATH="${DOCKER_VOLUME_DIR}/${CONTAINER_NAME}/conf"
+LOCAL_POSTGRESQL_DATA_PATH="${DOCKER_VOLUME_DIR}/${CONTAINER_NAME}/data"
 
 check_directory() {
   local dir_path=$1
