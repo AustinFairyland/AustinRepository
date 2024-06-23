@@ -17,6 +17,12 @@ CONTAINER_USER="$(id -u)"
 CONTAINER_GROUP="$(id -g)"
 DOCKER_VOLUME_DIR="/data/container/volume"
 
+REDIS_CONF_FILE_PATH="${EXECUTE_PATH}/conf/redis.conf"
+
+LOCAL_REDIS_CONF_DIR_PATH="${DOCKER_VOLUME_DIR}/${CONTAINER_NAME}/conf"
+LOCAL_REDIS_DATA_DIR_PATH="${DOCKER_VOLUME_DIR}/${CONTAINER_NAME}/data"
+LOCAL_REDIS_LOG_DIR_PATH="${DOCKER_VOLUME_DIR}/${CONTAINER_NAME}/logs"
+
 check_requirements() {
   if ! command -v docker &>/dev/null; then
     echo -e "${RED_COLOR}Docker is not installed. Please install Docker and try again.${RESET_COLOR}"
@@ -69,8 +75,44 @@ main() {
     CONTAINER_GROUP=$(id -g "$SUDO_USER")
   fi
 
-  local docker_command=(
+  check_directory "$LOCAL_REDIS_CONF_DIR_PATH"
+  check_directory "$LOCAL_REDIS_DATA_DIR_PATH"
+  check_directory "$LOCAL_REDIS_LOG_DIR_PATH"
 
+  if [[ -f "$REDIS_CONF_FILE_PATH" ]]; then
+    echo -e "${GREEN_COLOR}File exists: ${REDIS_CONF_FILE_PATH}${RESET_COLOR}"
+    if cp "$REDIS_CONF_FILE_PATH" "$LOCAL_REDIS_CONF_DIR_PATH"; then
+      echo -e "${GREEN_COLOR}Successfully copied file.${RESET_COLOR}"
+    else
+      echo -e "${RED_COLOR}Failed to copy file.${RESET_COLOR}"
+      exit 1
+    fi
+  else
+    echo -e "${RED_COLOR}File does not exist: ${MYSQL_CONF_PATH}${RESET_COLOR}"
+    exit 1
+  fi
+
+  change_directory_owner "$LOCAL_REDIS_CONF_DIR_PATH"
+  change_directory_owner "$LOCAL_REDIS_DATA_DIR_PATH"
+  change_directory_owner "$LOCAL_REDIS_LOG_DIR_PATH"
+
+  local docker_command=(
+    "docker"
+    "run"
+    "-d"
+    "--name" "$CONTAINER_NAME"
+    "--network" "DockerCustomNet"
+    "--ip" "173.1.10.3"
+    "--user" "$CONTAINER_USER":"$CONTAINER_GROUP"
+    "--privileged=true"
+    "-e" "TZ=Asia/Shanghai"
+    "-v" "${LOCAL_REDIS_CONF_DIR_PATH}:/etc/redis"
+    "-v" "${LOCAL_REDIS_DATA_DIR_PATH}:/data"
+    "-v" "${LOCAL_REDIS_LOG_DIR_PATH}:/var/log/redis"
+    "-p" "51003:6379"
+    "--restart" "always"
+    "redis:latest"
+    "redis-server" "/etc/redis/redis.conf"
   )
 
   if "${docker_command[@]}"; then

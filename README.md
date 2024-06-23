@@ -1,4 +1,4 @@
-# personal
+# Lionel Johnson's Personal Project
 
 > @software: PyCharm  
 > @author: [Lionel Johnson](https://fairy.host)  
@@ -16,14 +16,50 @@ Development Environment
 
 ---
 
-# Lionel Johnson's Personal Project
+# Description
 
 Lionel Johnson's personal repoistory
 
-# Contents
+# Plan & Future
 
-Tips: Wait fill up
+## [Common configuration](conf)
 
-# Collaborators
+- [x] [Anaconda/Miniconda](conf/anaconda)
+- [x] [Docker](conf/docker)
+- [x] [Git](conf/git)
+- [x] [Nginx](conf/nginx)
+- [x] [OpenClash](conf/openclash)
+- [x] [SSH](conf/ssh)
+- [x] [Python Virtualenv](conf/python-virtualenv)
+- [x] [pip](conf/pip)
+- [x] [npm](conf/npm)
+- [x] [cnpm](conf/cnpm)
+- [x] [yarn](conf/yarn)
 
-- [Lionel Johnson](https://github.com/PrettiestFairy)
+## [Document](docs)
+
+- [x] [Docker](docs/docker)
+
+## [Project](project)
+
+- [x] [Python - Generate the QR code](projects/python/生成二维码)
+
+## [Scripts](scripts)
+
+- [x] [Shell - Crontab for root](scripts/crontab/root)
+- [x] [Shell - Docker - Init docker directory](scripts/docker/000-docker/init-docker)
+- [x] [Shell - Docker - Create docker network](scripts/docker/000-docker/create-network)
+- [x] [Shell - Docker - Run MySQL container](scripts/docker/001-mysql-service/start-mysql-service)
+- [x] [Shell - Docker - Run PostgreSQL container](scripts/docker/002-postgresql-service/start-postgresql-service)
+- [x] [Shell - Docker - Run Redis container](scripts/docker/003-redis-service/start-redis-service)
+- [ ] [Shell - Docker - Run RabbitMQ container]()
+- [ ] [Shell - Docker - Run MongoDB container]()
+- [ ] [Shell - Docker - Run Minio container]()
+- [ ] [Shell - Docker - Run Picsur container]()
+- [ ] [Shell - Docker - Run Halo container]()
+- [ ] [Shell - Docker - Run Portainer container]()
+- [ ] [Shell - Docker - Run Portainer Agent container]()
+- [ ] [Shell - Docker - Run IT Tools container]()
+- [ ] [Shell - Docker Compose - Create docker network]()
+- [x] [Shell - Linux - firewall - remove all ports](scripts/firewall/remove-all-ports)
+- [x] [Shell - Podman - podman container](scripts/podman/podman-container)
