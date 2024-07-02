@@ -111,7 +111,7 @@ main() {
     "-v" "${LOCAL_REDIS_LOG_DIR_PATH}:/var/log/redis"
     "-p" "51003:6379"
     "--restart" "always"
-    "redis:latest"
+    "redis:7.2.5"
     "redis-server" "/etc/redis/redis.conf"
   )
 

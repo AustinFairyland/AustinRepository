@@ -42,7 +42,7 @@ Lionel Johnson's personal repoistory
 
 ## [Project](project)
 
-- [x] [Python - Generate the QR code](projects/python/生成二维码)
+- [x] [Python - Generate the QR code](projects/python/generate-qrcode)
 
 ## [Scripts](scripts)
 
