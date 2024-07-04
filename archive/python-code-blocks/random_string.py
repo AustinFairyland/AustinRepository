@@ -10,7 +10,8 @@
 import random
 import string
 
+
 def random_string(min_length=4, max_length=10):
     length = random.randint(min_length, max_length)
     random_char = string.ascii_letters + string.digits
-    return ''.join(random.choices(random_char, k=length))
+    return "".join(random.choices(random_char, k=length))
