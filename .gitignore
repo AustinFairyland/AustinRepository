@@ -6,6 +6,7 @@ log[s]
 data
 temp/*
 !temp/*.md
+tmp
 
 
 # custom
