@@ -16,4 +16,3 @@ def create_dir(dir_path, dir_names):
         if not os.path.exists(new_dir_path):
             os.makedirs(new_dir_path, exist_ok=True)
             print(f"OK: {new_dir_path}")
-            
