@@ -22,6 +22,8 @@ Lionel Johnson's personal repoistory
 
 # Plan & Future
 
+Tips: It is being sorted out and supplemented.
+
 ## [Common configuration](conf)
 
 - [x] [Anaconda/Miniconda](conf/anaconda)
