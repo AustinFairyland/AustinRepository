@@ -12,19 +12,18 @@ import sys
 import warnings
 
 sys.dont_write_bytecode = True
-warnings.filterwarnings('ignore')
+warnings.filterwarnings("ignore")
 
 
 import pyautogui
 import time
 import keyboard
 
-time.sleep(5)
-x, y = pyautogui.position()
-for i in range(10000):
-    pyautogui.click(x=x, y=y, clicks=1, button='left')
-    time.sleep(0.00001)
-    if keyboard.is_pressed(' '):
-        break
-
-
+while True:
+    if keyboard.is_pressed("r"):
+        x, y = pyautogui.position()
+        for i in range(999999999):
+            pyautogui.click(x=x, y=y, clicks=1, button="left")
+            # time.sleep(0.00001)
+            if keyboard.is_pressed("q"):
+                break
