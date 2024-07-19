@@ -12,7 +12,11 @@ tmp
 # custom
 build
 dist
-/learning/java/**/out/
+*-dev.yaml
+*.dev.yaml
+dev-*.yaml
+dev.*.yaml
+/learning/java/**/out
 
 # work
 work
