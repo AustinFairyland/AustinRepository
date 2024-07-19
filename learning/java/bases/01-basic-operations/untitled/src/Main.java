@@ -1,16 +1,16 @@
+/*****************************************************
+ * @software: IntelliJ IDEA
+ * @author: Lionel Johnson
+ * @contact: https://fairy.host
+ * @organization: https://github.com/FairylandFuture
+ * @since: 2024-07-19 21:45:06 UTC+08:00
+ ******************************************************/
+
+/**
+ * @author Lionel Johnson
+ */
 public class Main {
-
     public static void main(String[] args) {
-        String a = "Hello World";
-        System.out.println(a);
-        test();
+        
     }
-
-    public static void test() {
-        double a = 0.00005;
-//        Double a = 0.00005;
-        System.out.println(a);
-    }
-
-
 }
