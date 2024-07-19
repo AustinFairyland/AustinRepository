@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 https://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <!-- 本地仓库的路径 -->
+    <!-- <localRepository>/data/dev/m2-repo</localRepository> -->
+    <localRepository>C:\\Lionel-Johnson\\Dependency\\Maven\\Repository</localRepository>
+
+    <!-- 远程仓库和插件仓库 -->
+    <profiles>
+        <profile>
+            <id>default-profiles</id>
+            <!-- 启用该配置文件 -->
+            <activation>
+                <activeByDefault>true</activeByServerDefault>
+            </activation>
+            <!-- 仓库配置 -->
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <name>Maven Central Repository</name>
+                    <url>https://repo.maven.apache.org/maven2</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+            <!-- 插件仓库配置 -->
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>central</id>
+                    <name>Maven Central Plugin Repository</name>
+                    <url>https://repo.maven.apache.org/maven2</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>false</enabled>
+                    </snapshots>
+                </pluginEleRepositorypository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+
+    <!-- 服务器认证信息 -->
+    <!-- <servers>
+        <server>
+            <id>servers</id>
+            <username>username</username>
+            <password>password</password>
+        </server>
+    </servers> -->
+
+    <!-- 镜像配置，可用于内网镜像或加速器 -->
+    <!-- <mirrors>
+        <mirror>
+            <id>mirrorId</id>
+            <mirrorOf>central</mirrorOf>
+            <name>Human Readable Name for this Mirror.</name>
+            <url>http://my.repository.com/repo/path</url>
+        </mirror>
+    </mirrors> -->
+
+    <!-- 代理配置 -->
+    <proxies>
+        <proxy>
+            <id>mvn-proxy</id>
+            <active>true</active>
+            <protocol>http</protocol>
+            <host>127.0.0.1</host>
+            <port>7890</port>
+            <username>username</username>
+            <password>password</password>
+            <!-- <nonProxyHosts>www.google.com|*.example.com</nonProxyHosts> -->
+        </proxy>
+    </proxies>
+</settings>
