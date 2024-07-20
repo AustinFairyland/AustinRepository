@@ -18,6 +18,14 @@ public class Operators {
      * 乘法: *= <br>
      * 除以: /= <br>
      * 取模: %= <br>
+     * 2. 关系运算符(比较运算符) <br>
+     * 结果是 boolean 类型 <br>
+     * 大于: > <br>
+     * 小于: < <br>
+     * 等于: == <br>
+     * 不等于: != <br>
+     * 大于等于: >= <br>
+     * 小于等于: <= <br>
      *
      * @param args null
      */
