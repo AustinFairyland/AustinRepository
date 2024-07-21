@@ -31,7 +31,7 @@ public class JavaArrays {
 
         // 分配空间并初始化赋值
         int[] ints1 = {1, 2, 3, 4, 5};
-        
+
 
     }
 }
