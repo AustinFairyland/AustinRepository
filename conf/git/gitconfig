@@ -1,11 +1,11 @@
 [user]
-name = AustinFairyland
-email = fairylandhost@outlook.com
+name = Lionel Johnson
+email = fairylandfuture@outlook.com
 [http]
 sslVerify = true
-# proxy = 127.0.0.1:65353
+; proxy = 127.0.0.1:65353
 [https]
-# proxy = 127.0.0.1:65353
+; proxy = 127.0.0.1:65353
 [filter "lfs"]
 required = true
 clean = git-lfs clean -- %f
