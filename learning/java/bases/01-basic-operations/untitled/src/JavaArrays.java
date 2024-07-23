@@ -23,7 +23,15 @@ public class JavaArrays {
         ints[3] = 4;
         ints[4] = 5;
 
+        System.out.println("=".repeat(50));
         System.out.println(Arrays.toString(ints));  // 将数组转为字符串
         System.out.println(ints.length);  // 计算数组的元素个数
+        System.out.println("=".repeat(50));
+        System.out.println(Arrays.toString(args));
+
+        // 分配空间并初始化赋值
+        int[] ints1 = {1, 2, 3, 4, 5};
+
+
     }
 }
