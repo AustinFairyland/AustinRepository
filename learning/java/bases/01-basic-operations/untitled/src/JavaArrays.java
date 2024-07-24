@@ -42,13 +42,20 @@ public class JavaArrays {
         }
 
         /*
-         * Arrays中的sort和toString方法
-         *   sort: 对数组中的元素进行排序
-         *   toString: 转换为字符串
+         * Arrays中的方法
+         *  sort: 对数组中的元素进行排序
+         *  toString: 转换为字符串
+         *  equals: 对比2个数组是否相等
+         *  copyOf: 把数组复制为长度为n的新数组, 把旧的数组拷贝到新数组中
          * */
         int[] ints2 = {8, 4, 2, 1, 23, 344, 12};
         Arrays.sort(ints2);
         System.out.println(Arrays.toString(ints2));
+        int[] ints3 = {1, 2, 3};
+        System.out.println(Arrays.equals(ints2, ints3));
+//        Arrays.fill(ints3, val);
+        int[] ints4 = Arrays.copyOf(ints3, 10);
+        System.out.println(Arrays.toString(ints4));
 
 
     }
