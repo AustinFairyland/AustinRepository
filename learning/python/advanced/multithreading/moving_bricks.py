@@ -100,12 +100,14 @@ if __name__ == '__main__':
     # print(f"总共耗时: {time.time() - b_start_time}秒")
     queue = SafeQueue(3)
     threads = list()
-    threads.append(MsgProducer("PA", 10, queue))
-    threads.append(MsgProducer("PB", 10, queue))
-    threads.append(MsgProducer("PC", 10, queue))
+    threads.append(MsgProducer("PA", 2, queue))
+    threads.append(MsgProducer("PB", 2, queue))
+    threads.append(MsgProducer("PC", 2, queue))
 
     threads.append(MsgConsumer("CA", queue))
     threads.append(MsgConsumer("CB", queue))
 
     for t in threads:
         t.start()
+
+    time.sleep(100)
