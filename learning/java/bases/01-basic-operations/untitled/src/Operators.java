@@ -18,6 +18,20 @@ public class Operators {
      * 乘法: *= <br>
      * 除以: /= <br>
      * 取模: %= <br>
+     * <br>
+     * 2. 关系运算符(比较运算符) <br>
+     * 结果是 boolean 类型 <br>
+     * 大于: > <br>
+     * 小于: < <br>
+     * 等于: == <br>
+     * 不等于: != <br>
+     * 大于等于: >= <br>
+     * 小于等于: <= <br>
+     * <br>
+     * 3. 与或非 <br>
+     * 与: &&, 表示 and, 一个为假, 结果就是假 <br>
+     * 或: ||, 表示 or, 一个为真, 结果为真 <br>
+     * 非: !, 表示 not, 反 <br>
      *
      * @param args null
      */
@@ -43,6 +57,11 @@ public class Operators {
         year2 = 2020;
         year2 %= 4;
         System.out.println(year2);  // 0
+
+        // 关系运算符, 返回的都是 boolean 类型的数据, 即 true , false
+        System.out.println(3 < 1);
+
+        // 逻辑运算符, 参考 `Ifelse.java` 的示例
 
     }
 }

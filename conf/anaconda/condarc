@@ -5,7 +5,6 @@ channels:
 show_channel_urls: true
 envs_dirs:
   - D:\Developments\Dependence\Anaconda\Environments
-#  - D:\App\Anaconda\envs
 pkgs_dirs:
   - D:\Cache\Anaconda
 #proxy_servers:
@@ -15,4 +14,3 @@ restore_free_channel: true
 # channel_priority: strict
 ssl_verify: false
 report_errors: true
-
