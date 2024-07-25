@@ -1,0 +1,76 @@
+incident_id: 123
+platform_id: platform123
+platform_name: Example Platform
+platform_level: 2
+name: Incident Name
+level: 3
+description: Incident description goes here.
+attachment: attachment_file_path
+action_type: Action Type Example
+ioc_name: IOC Name Example
+confidence: 4
+severity: 5
+ioc_type: IOC Type Example
+data_source: Data Source Example
+location: Location Example
+detail: Detail information about the incident.
+vuln_name: Vulnerability Name Example
+cve: CVE-2021-12345
+vuln_desc: Vulnerability description example.
+solution: Proposed solution for the vulnerability.
+report_type: 1
+report_desc: Description of the report.
+platform_ids: [platform_id_1: platform_id_2]
+head_ids: [head_id_1: head_id_2]
+dispatch_time: 2024-07-25T10:00:00Z
+create_by_id: 456
+create_by: Created By Example
+dispatch_status: 2
+create_by_phone: 123-456-7890
+deadline: 2024-08-01T10:00:00Z
+urging_status: Urgent
+urging_platform_json: {platform1:urgentplatform2:normal}
+urging_time: 2024-07-26T10:00:00Z
+event_name: Event Name Example
+event_id: event_id_123
+alert_level: 1
+source_ip: 192.168.1.1
+destination_ip: 192.168.1.2
+start_time: 2024-07-25T09:00:00Z
+fallen_reason_desc: Reason for the fall.
+attach_file: attached_file_path
+business_system: Business System Example
+institute: Institute Name Example
+reviewer: Reviewer Name
+disposer: Disposer Name
+is_upload: 0
+uuid: uuid_123456
+status: 1
+sn: SN123456
+enterprises_id: enterprise_id_123
+enterprises_name: Enterprise Name Example
+process_id: process_id_123
+start_user: Start User Example
+attack_result: Attack Result Example
+end_time: 2024-07-25T11:00:00Z
+type: Incident Type Example
+event_source: 1
+occurrence: 1
+dispose_suggest: Disposal Suggestion Example
+incident_stage: 3
+dispose_instructions: Disposal Instructions Example
+dispose_time: 2024-07-25T10:30:00Z
+threat_level: 2
+attachment_url: http://example.com/attachment
+is_xf: 0
+is_send: 1
+xf_msg: XF Message Example
+in_time: 2024-07-25T09:30:00Z
+out_time: 2024-07-25T10:30:00Z
+time_consuming: 60
+is_timeout: 0
+sys_id: sys_id_123
+sys_name: System Name Example
+claim_status: 1
+report_ulr: http://example.com/report
+ktype: 1
