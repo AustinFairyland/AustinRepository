@@ -43,17 +43,17 @@ Tips: It is being sorted out and supplemented.
 - [x] [Docker](docs/docker)
 - [ ]  [Java](docs/java)
 
-## [Learngin](learning)
+## [Learngin](languages)
 
-- [ ] [Ansible](learning/ansible)
-- [ ] [CSS](learning/css)
-- [ ] [Go](learning/go)
-- [ ] [HTML](learning/html)
-- [ ] [Java](learning/java)
-- [ ] [JavaScript](learning/javascript)
-- [ ] [Kubernetes](learning/kubernetes)
-- [ ] [MySQL](learning/mysql)
-- [ ] [Python](learning/python)
+- [ ] [Ansible](languages/ansible)
+- [ ] [CSS](languages/css)
+- [ ] [Go](languages/go)
+- [ ] [HTML](languages/html)
+- [ ] [Java](languages/java)
+- [ ] [JavaScript](languages/javascript)
+- [ ] [Kubernetes](languages/kubernetes)
+- [ ] [MySQL](languages/mysql)
+- [ ] [Python](languages/python)
 
 ## [Project](project)
 

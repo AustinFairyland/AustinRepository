@@ -16,7 +16,7 @@ dist
 *.dev.yaml
 dev-*.yaml
 dev.*.yaml
-/learning/java/**/out
+/languages/java/**/out
 
 # work
 work
