@@ -48,23 +48,21 @@ public class JavaArrays {
          *  equals: 对比2个数组是否相等(返回值为boolean)
          *  fill: 把数组中的值都改为默认值
          *  copyOf: 把数组复制为长度为n的新数组, 把旧的数组拷贝到新数组中(有返回值)
-         *  binarySearch: 二分查找元素
+         *  binarySearch: 二分查找元素, 如果找不到是负数, 返回值插入点取负数再减1
          * */
         int[] ints2 = {8, 4, 2, 1, 23, 344, 12};
         Arrays.sort(ints2);
         System.out.println(Arrays.toString(ints2));
-        
+
         int[] ints3 = {1, 2, 3};
         System.out.println(Arrays.equals(ints2, ints3));
-        
+
         Arrays.fill(ints3, 1);
         System.out.println(Arrays.toString(ints3));
-        
+
         int[] ints4 = Arrays.copyOf(ints3, 10);
         System.out.println(Arrays.toString(ints4));
 
-        System.out.println(Arrays.binarySearch(ints2, 2));
-
-
+        System.out.println(Arrays.binarySearch(ints2, 16));
     }
 }
