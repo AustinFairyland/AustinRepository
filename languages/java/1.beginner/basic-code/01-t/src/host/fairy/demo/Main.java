@@ -29,4 +29,8 @@ public class Main {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public static void main(String[] args) {
+        System.out.println("aa");
+    }
 }
