@@ -3,7 +3,7 @@
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-28 01:22:10 UTC+08:00
+ * @since: @since: 2024-07-28 19:25:58 UTC+08:00
  *****************************************************/
 package host.fairy.test1;
 
@@ -20,17 +20,20 @@ public class GirlFriend {
 
     public GirlFriend(String name, int age, boolean gender) {
         this.name = name;
-        this.age = age;
         this.gender = gender;
-    }
-    
 
-    public void sleep() {
-        System.out.println("Sleeping...");
+        this.setAge(age);
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 
     public void eat() {
         System.out.println("Eating...");
     }
-    
 }
