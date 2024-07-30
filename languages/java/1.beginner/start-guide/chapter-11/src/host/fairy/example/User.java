@@ -1,0 +1,27 @@
+/*****************************************************
+ * @software: IntelliJ IDEA
+ * @author: Lionel Johnson
+ * @contact: https://fairy.host
+ * @organization: https://github.com/FairylandFuture
+ * @since: 2024-07-30 23:11:56 UTC+08:00
+ ****************************************************/
+package host.fairy.example;
+
+import java.util.ArrayList;
+
+/**
+ *@author Lionel Johnson
+ */
+public class User {
+    int id;
+    String username;
+    String password;
+
+    public User(int id, String username, String password) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+    }
+
+
+}
