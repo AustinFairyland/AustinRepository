@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class StudentsService {
     static ArrayList<Student> students = new ArrayList<>();
 
-    public boolean addStudent(Student student) {
+    public static boolean addStudent(Student student) {
         if (!students.isEmpty()) {
             for (Student s : students) {
                 if (s.id == student.id) {
@@ -28,7 +28,7 @@ public class StudentsService {
         return true;
     }
 
-    public boolean deleteStudent(int id) {
+    public static boolean deleteStudent(int id) {
         if (students.isEmpty()) {
             System.out.println("学生列表为空！");
             return false;
@@ -43,7 +43,7 @@ public class StudentsService {
         return false;
     }
 
-    public boolean modifyStudent(Student student) {
+    public static boolean modifyStudent(Student student) {
         if (students.isEmpty()) {
             System.out.println("学生列表为空！");
             return false;
@@ -60,7 +60,7 @@ public class StudentsService {
         return false;
     }
 
-    public void queryStudent(int id) {
+    public static void queryStudent(int id) {
         if (students.isEmpty()) {
             System.out.println("学生列表为空！");
             return;
