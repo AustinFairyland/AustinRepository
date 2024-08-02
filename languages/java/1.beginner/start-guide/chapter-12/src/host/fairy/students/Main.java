@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        StudentsService studentsService = new StudentsService();
+//        StudentsService studentsService = new StudentsService();
 
         boolean flag = true;
         while (flag) {
@@ -30,7 +30,7 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    boolean addStatus = studentsService.addStudent(new Student(1, "张三", 18, "北京"));
+                    boolean addStatus = StudentsService.addStudent(new Student(1, "张三", 18, "北京"));
                     if (addStatus) {
                         System.out.println("添加成功！");
                     }
@@ -42,7 +42,7 @@ public class Main {
                     System.out.println("修改学生");
                     break;
                 case 4:
-                    studentsService.queryStudent(1);
+                    StudentsService.queryStudent(1);
                     break;
                 default:
                     flag = false;
