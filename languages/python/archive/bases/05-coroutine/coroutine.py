@@ -13,15 +13,13 @@ import sys
 import warnings
 import platform
 import asyncio
+import aiohttp
+from uuid import uuid4
 
 sys.dont_write_bytecode = True
 warnings.filterwarnings('ignore')
-if platform.system()=='Windows':
+if platform.system() == 'Windows':
     asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-
-
-import aiohttp
-from uuid import uuid4
 
 
 async def test():
@@ -46,5 +44,5 @@ async def main():
             'https://th.bing.com/th/id/OIG.o5N4j0tRaL5ZTSDpMxg0?pid=ImgGn'
         ]
         tasks = [asyncio.create_task(fetch(session, url)) for url in url_list]
-        
+
         await asyncio.wait(tasks)
