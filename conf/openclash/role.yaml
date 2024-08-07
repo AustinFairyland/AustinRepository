@@ -1,54 +1,53 @@
-# @File: role.yaml
-# @Editor: PyCharm
-# @Author: Austin (From Chengdu.China) https://fairy.host
-# @HomePage: https://github.com/AustinFairyland
-# @OperatingSystem: Windows 11 Professional Workstation 23H2 Canary Channel
-# @CreatedTime: 2024-01-17
-
+# @software: PyCharm
+# @author: Lionel Johnson
+# @contact: https://fairy.host
+# @organization: https://github.com/FairylandFuture
+# @since: 2024-08-07 13:07:14 UTC+8
+---
 rules:
   - SRC-IP-CIDR,10.0.0.1/32,DIRECT  # 局域网直连
   - SRC-IP-CIDR,10.0.254.91/32,DIRECT  # 局域网直连
-  - DOMAIN-KEYWORD,speed,DIRECT  # 域名关键字 speed
+#  - DOMAIN-KEYWORD,speed,DIRECT  # 域名关键字 speed
   - DOMAIN-KEYWORD,lol,DIRECT  # 域名关键字 lol
-#  - DST-PORT,22,DIRECT  # 端口 22
-#  - DST-PORT,53,DIRECT  # DNS 服务器端口
-#  - DST-PORT,853,DIRECT  # DNS 服务器端口
-#  - IP-CIDR,1.1.1.1/32,DIRECT  # DNS 服务器
-#  - IP-CIDR,8.8.4.4/32,DIRECT  # DNS 服务器
-#  - IP-CIDR,4.2.2.1/32,DIRECT  # DNS 服务器
-#  - IP-CIDR,8.8.8.8/32,DIRECT  # DNS 服务器
-#  - IP-CIDR,4.2.2.2/32,DIRECT  # DNS 服务器
-  - DOMAIN-KEYWORD,paypal,DIRECT  # 域名关键字 paypal
   - DOMAIN-KEYWORD,cloudflare,DIRECT  # 域名关键字 CloudFlare
   - DOMAIN-KEYWORD,fairies,DIRECT  # 域名关键字 fairies
   - DOMAIN-KEYWORD,fairy,DIRECT  # 域名关键字 fairy
   - DOMAIN-KEYWORD,cn,DIRECT  # 域名关键字 cn
-  - DOMAIN-KEYWORD,bing,Ⓜ️ 微软服务  # 域名关键字 bing
-##- SCRIPT,quic,REJECT #shortcuts rule
-##- SCRIPT,time-limit,REJECT #shortcuts rule
+#  - DOMAIN-KEYWORD,bing,Ⓜ️ 微软服务  # 域名关键字 bing
+  #  - DST-PORT,53,DIRECT  # DNS 服务器端口
+  #  - DST-PORT,853,DIRECT  # DNS 服务器端口
+  #  - IP-CIDR,1.1.1.1/32,DIRECT  # DNS 服务器
+  #  - IP-CIDR,8.8.4.4/32,DIRECT  # DNS 服务器
+  #  - IP-CIDR,4.2.2.1/32,DIRECT  # DNS 服务器
+  #  - IP-CIDR,8.8.8.8/32,DIRECT  # DNS 服务器
+  #  - IP-CIDR,4.2.2.2/32,DIRECT  # DNS 服务器
+  #  - DOMAIN-KEYWORD,paypal,DIRECT  # 域名关键字 paypal
+  #  - SCRIPT,quic,REJECT #shortcuts rule
+  #  - SCRIPT,time-limit,REJECT #shortcuts rule
+  #  - DST-PORT,22,DIRECT  # 端口 22
 
-##- PROCESS-NAME,curl,DIRECT #匹配路由自身进程(curl直连)
-##- DOMAIN-SUFFIX,google.com,Proxy #匹配域名后缀(交由Proxy代理服务器组)
-##- DOMAIN-KEYWORD,google,Proxy #匹配域名关键字(交由Proxy代理服务器组)
-##- DOMAIN,google.com,Proxy #匹配域名(交由Proxy代理服务器组)
-##- DOMAIN-SUFFIX,ad.com,REJECT #匹配域名后缀(拒绝)
-##- IP-CIDR,127.0.0.0/8,DIRECT #匹配数据目标IP(直连)
-##- SRC-IP-CIDR,192.168.1.201/32,DIRECT #匹配数据发起IP(直连)
-##- DST-PORT,80,DIRECT #匹配数据目标端口(直连)
-##- SRC-PORT,7777,DIRECT #匹配数据源端口(直连)
+  #- PROCESS-NAME,curl,DIRECT #匹配路由自身进程(curl直连)
+  #- DOMAIN-SUFFIX,google.com,Proxy #匹配域名后缀(交由Proxy代理服务器组)
+  #- DOMAIN-KEYWORD,google,Proxy #匹配域名关键字(交由Proxy代理服务器组)
+  #- DOMAIN,google.com,Proxy #匹配域名(交由Proxy代理服务器组)
+  #- DOMAIN-SUFFIX,ad.com,REJECT #匹配域名后缀(拒绝)
+  #- IP-CIDR,127.0.0.0/8,DIRECT #匹配数据目标IP(直连)
+  #- SRC-IP-CIDR,192.168.1.201/32,DIRECT #匹配数据发起IP(直连)
+  #- DST-PORT,80,DIRECT #匹配数据目标端口(直连)
+  #- SRC-PORT,7777,DIRECT #匹配数据源端口(直连)
 
-##DDNS
-##- DOMAIN-SUFFIX,checkip.dyndns.org,DIRECT
-##- DOMAIN-SUFFIX,checkipv6.dyndns.org,DIRECT
-##- DOMAIN-SUFFIX,checkip.synology.com,DIRECT
-##- DOMAIN-SUFFIX,ifconfig.co,DIRECT
-##- DOMAIN-SUFFIX,api.myip.com,DIRECT
-##- DOMAIN-SUFFIX,ip-api.com,DIRECT
-##- DOMAIN-SUFFIX,ipapi.co,DIRECT
-##- DOMAIN-SUFFIX,ip6.seeip.org,DIRECT
-##- DOMAIN-SUFFIX,members.3322.org,DIRECT
+  #DDNS
+  #- DOMAIN-SUFFIX,checkip.dyndns.org,DIRECT
+  #- DOMAIN-SUFFIX,checkipv6.dyndns.org,DIRECT
+  #- DOMAIN-SUFFIX,checkip.synology.com,DIRECT
+  #- DOMAIN-SUFFIX,ifconfig.co,DIRECT
+  #- DOMAIN-SUFFIX,api.myip.com,DIRECT
+  #- DOMAIN-SUFFIX,ip-api.com,DIRECT
+  #- DOMAIN-SUFFIX,ipapi.co,DIRECT
+  #- DOMAIN-SUFFIX,ip6.seeip.org,DIRECT
+  #- DOMAIN-SUFFIX,members.3322.org,DIRECT
 
-##在线IP段转CIDR地址：http://ip2cidr.com
+#在线IP段转CIDR地址：http://ip2cidr.com
 
 
 script:
@@ -70,9 +69,9 @@ script:
 ##            return "DIRECT"
 
 #rules:
+
 ##- SCRIPT,quic,REJECT #shortcuts rule
 ##- SCRIPT,time-limit,REJECT #shortcuts rule
-
 ##- PROCESS-NAME,curl,DIRECT #匹配路由自身进程(curl直连)
 ##- DOMAIN-SUFFIX,google.com,Proxy #匹配域名后缀(交由Proxy代理服务器组)
 ##- DOMAIN-KEYWORD,google,Proxy #匹配域名关键字(交由Proxy代理服务器组)
