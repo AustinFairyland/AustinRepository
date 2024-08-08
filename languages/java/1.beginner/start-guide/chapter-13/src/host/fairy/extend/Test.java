@@ -30,5 +30,6 @@ class Zi extends Fu {
         System.out.println(name);
         System.out.println(this.name);
         System.out.println(super.name);
+        System.out.println("The helped");
     }
 }
