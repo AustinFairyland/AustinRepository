@@ -53,7 +53,7 @@
 
 ## PostCSS
 
-```css
+```postcss
 /***************************************************
 @software: ${PRODUCT_NAME}
 @author: Lionel Johnson
@@ -65,7 +65,7 @@
 
 ## Sass File
 
-```css
+```sass
 // @software: ${PRODUCT_NAME}
 // @author: Lionel Johnson
 // @contact: https://fairy.host
@@ -130,7 +130,7 @@ spec:
 # @author: Lionel Johnson
 # @contact: https://fairy.host
 # @organization: https://github.com/FairylandFuture
-# @since: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+8
+# @since: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+08:00
 
 ---
 apiVersion: apps/v1
@@ -165,7 +165,7 @@ spec:
 # @author: Lionel Johnson
 # @contact: https://fairy.host
 # @organization: https://github.com/FairylandFuture
-# @since: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+8
+# @since: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+08:00
 
 ---
 kind: ConfigMap
@@ -183,7 +183,7 @@ data:
 # @author: Lionel Johnson
 # @contact: https://fairy.host
 # @organization: https://github.com/FairylandFuture
-# @since: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+8
+# @since: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+08:00
 
 ---
 apiVersion: v1
@@ -208,7 +208,7 @@ spec:
 # @author: Lionel Johnson
 # @contact: https://fairy.host
 # @organization: https://github.com/FairylandFuture
-# @since: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+8
+# @since: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+08:00
 
 ---
 apiVersion: networking.k8s.io/v1
@@ -239,7 +239,7 @@ spec:
 # @author: Lionel Johnson
 # @contact: https://fairy.host
 # @organization: https://github.com/FairylandFuture
-# @since: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+8
+# @since: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+08:00
 
 ---
 apiVersion: batch/v1
@@ -277,7 +277,7 @@ spec:
 
 ## TypeScript File
 
-```yaml
+```typescript
 /****************************************************
  * @software: ${PRODUCT_NAME}
  * @author: Lionel Johnson
@@ -289,7 +289,7 @@ spec:
 
 ## JSX File
 
-```jsx
+```typescript jsx
 /****************************************************
  * @software: ${PRODUCT_NAME}
  * @author: Lionel Johnson
@@ -301,7 +301,7 @@ spec:
 
 ## TypeScript JSX File
 
-```yaml
+```typescript jsx
 /****************************************************
  * @software: ${PRODUCT_NAME}
  * @author: Lionel Johnson
@@ -415,7 +415,7 @@ if __name__ == '__main__':
 
 ## BashSupport Pro Bash
 
-```shell
+```bash
 #!#[[$SHEBANG$]]#
 # @software: ${PRODUCT_NAME}
 # @author: Lionel Johnson
@@ -437,7 +437,7 @@ main
 
 ## BashSupport Pro POSIX
 
-```shell
+```bash
 #!/bin/sh
 # @software: ${PRODUCT_NAME}
 # @author: Lionel Johnson
@@ -459,7 +459,7 @@ main
 
 ## BashSupport Pro Google Style Guide
 
-```shell
+```bash
 #!/bin/bash
 # @software: ${PRODUCT_NAME}
 # @author: Lionel Johnson
@@ -480,7 +480,7 @@ main "$@"
 
 ## BashSupport Pro bats-core
 
-```shell
+```bash
 #!/usr/bin/env bats
 # @software: ${PRODUCT_NAME}
 # @author: Lionel Johnson
@@ -515,7 +515,7 @@ teardown() {
 
 ## SQL File
 
-```sql
+```mysql
 /*****************************************************
  * @software: ${PRODUCT_NAME}
  * @author: Lionel Johnson
@@ -523,6 +523,7 @@ teardown() {
  * @organization: https://github.com/FairylandFuture
  * @since: @since: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+08:00
  *****************************************************/
+
 ```
 
 ## Nginx Config File
@@ -579,8 +580,6 @@ Development Environment
 
 ```
 
-
-
 ## Yaml File
 
 ```yaml
@@ -588,7 +587,7 @@ Development Environment
 # @author: Lionel Johnson
 # @contact: https://fairy.host
 # @organization: https://github.com/FairylandFuture
-# @since: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+8
+# @since: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+08:00
 ---
 
 ```
