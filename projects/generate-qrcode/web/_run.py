@@ -4,7 +4,7 @@
 @author: Lionel Johnson
 @contact: https://fairy.host
 @organization: https://github.com/FairylandFuture
-@since: 04 02, 2024
+@datetime: 2024-04-02 16:59:44 UTC+08:00
 """
 
 from flask import Flask, send_file, request, abort

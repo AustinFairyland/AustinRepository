@@ -2,7 +2,7 @@
 
 > @Editor: Typora
 >
-> @Author: Austin (From Chengdu.China)
+> @author: [Lionel Johnson](https://fairy.host)  
 >
 > @HomePage: [AustinFairyland](https://github.com/AustinFairyland)
 >
@@ -35,4 +35,3 @@
   ```bash
   setup /configure config.xml
   ```
-
