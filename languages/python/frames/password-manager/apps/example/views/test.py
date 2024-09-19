@@ -4,7 +4,7 @@
 @author: Lionel Johnson
 @contact: https://fairy.host
 @organization: https://github.com/FairylandFuture
-@since: 2024-07-05 20:19:31 UTC+8
+@datetime: 2024-07-05 20:19:31 UTC+08:00
 """
 
 from typing import Self

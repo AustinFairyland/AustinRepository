@@ -2,10 +2,10 @@
 """ 
 @File: coroutine.py
 @Editor: PyCharm
-@Author: Austin (From Chengdu.China) https://fairy.host
+@author: Lionel Johnson
 @HomePage: https://github.com/AustinFairyland
 @OperatingSystem: Windows 11 Professional Workstation 23H2 Canary Channel
-@CreatedTime: 2023-10-10
+@datetime: 2023-12-31 00:00:00 UTC+08:00
 """
 
 import os

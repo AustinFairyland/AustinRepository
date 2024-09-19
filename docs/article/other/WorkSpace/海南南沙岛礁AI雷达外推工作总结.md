@@ -64,7 +64,7 @@
 #!/bin/bash
 # @File: radar_management.sh
 # @Editor: PyCharm
-# @Author: Alice(From Chengdu.China)
+@author: Lionel Johnson
 # @HomePage: https://github.com/AliceEngineerPro
 # @CreatedTime: 2023/2/10 19:49
 
@@ -180,4 +180,3 @@ done
 > 数据输出:ftp://10.\*.\*.\*/radar_extrapolation_hainan/predict_output
 
 ![8db4233295cf6f4d0f318b9e289bb2b](./static/images/8db4233295cf6f4d0f318b9e289bb2b.png)
-

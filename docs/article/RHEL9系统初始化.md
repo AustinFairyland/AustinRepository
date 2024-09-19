@@ -6,7 +6,7 @@
 >
 > @Editor: PyCharm
 >
-> @Author: [Austin (From Chengdu.China)](https://fairy.host)
+> @author: [Lionel Johnson](https://fairy.host)  
 >
 > @HomePage: [AustinFairyland](https://github.com/AustinFairyland)
 >
@@ -79,4 +79,3 @@ sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 # 如果有依赖冲突
 sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin --nobest
 ```
-

@@ -64,7 +64,7 @@ dataType[] arrayRefVar = {value0, value1, ..., valuek};
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-21 21:21:12 UTC+08:00
+ * @datetime: 2024-07-21 21:21:12 UTC+08:00
  *****************************************************/
 
 import java.util.Arrays;
@@ -111,7 +111,7 @@ Arrays 中的方法
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-21 21:21:12 UTC+08:00
+ * @datetime: 2024-07-21 21:21:12 UTC+08:00
  *****************************************************/
 
 import java.util.Arrays;
@@ -185,7 +185,7 @@ public class JavaArrays {
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-25 22:00:13 UTC+08:00
+ * @datetime: 2024-07-25 22:00:13 UTC+08:00
  *****************************************************/
 
 import java.util.Arrays;
@@ -222,4 +222,3 @@ public class ArrayDemo3 {
 }
 
 ```
-

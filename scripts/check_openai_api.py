@@ -4,8 +4,8 @@
 @ Editor: PyCharm
 @ Author: Austin (From Chengdu.China)
 @ HomePage: https://github.com/AustinFairyland
-@ OS: Windows 11 Professional Workstation 22H2
-@ CreatedTime: 2023-09-17
+
+@datetime: 2023-12-31 00:00:00 UTC+08:00
 """
 
 import sys

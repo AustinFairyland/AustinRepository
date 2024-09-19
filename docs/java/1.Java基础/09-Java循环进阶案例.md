@@ -8,7 +8,7 @@
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-27 12:54:11 UTC+08:00
+ * @datetime: 2024-07-27 12:54:11 UTC+08:00
  *****************************************************/
 
 import java.util.Scanner;
@@ -46,7 +46,7 @@ public class Demo01 {
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-27 13:47:41 UTC+08:00
+ * @datetime: 2024-07-27 13:47:41 UTC+08:00
  *****************************************************/
 
 /**
@@ -82,7 +82,7 @@ public class Demo02 {
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-27 13:54:22 UTC+08:00
+ * @datetime: 2024-07-27 13:54:22 UTC+08:00
  *****************************************************/
 
 /**
@@ -128,4 +128,3 @@ public class Demo03 {
 }
 
 ```
-

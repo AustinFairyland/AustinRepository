@@ -4,7 +4,7 @@
 @author: Lionel Johnson
 @contact: https://fairy.host
 @organization: https://github.com/FairylandFuture
-@since: 2024-07-07 01:20:59 UTC+8
+@datetime: 2024-07-07 01:20:59 UTC+08:00
 """
 
 import django_filters

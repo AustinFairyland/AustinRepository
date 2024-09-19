@@ -4,8 +4,7 @@
 @ Editor: PyCharm
 @ Author: Ace (From Chengdu.China)
 @ HomePage: https://github.com/AceProfessional
-@ OS: Windows 11 Professional Workstation 22H2
-@ CreatedTime: 2023-08-23
+@datetime: 2023-12-31 00:00:00 UTC+08:00
 """
 
 import sys

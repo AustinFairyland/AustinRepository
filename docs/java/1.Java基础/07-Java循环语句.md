@@ -30,7 +30,7 @@ while( 布尔表达式 ) {
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-21 14:37:12 UTC+08:00
+ * @datetime: 2024-07-21 14:37:12 UTC+08:00
  *****************************************************/
 
 /**
@@ -84,7 +84,7 @@ do {
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-21 14:48:29 UTC+08:00
+ * @datetime: 2024-07-21 14:48:29 UTC+08:00
  *****************************************************/
 
 /**
@@ -131,7 +131,7 @@ for(初始化; 布尔表达式; 更新) {
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-21 16:13:53 UTC+08:00
+ * @datetime: 2024-07-21 16:13:53 UTC+08:00
  *****************************************************/
 
 /**
@@ -174,7 +174,7 @@ for(声明语句 : 表达式)
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-21 16:13:53 UTC+08:00
+ * @datetime: 2024-07-21 16:13:53 UTC+08:00
  *****************************************************/
 
 /**
@@ -237,7 +237,7 @@ continue;
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-21 14:54:48 UTC+08:00
+ * @datetime: 2024-07-21 14:54:48 UTC+08:00
  *****************************************************/
 
 /**
@@ -273,7 +273,7 @@ public class WhileLoopDemo {
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-21 15:24:26 UTC+08:00
+ * @datetime: 2024-07-21 15:24:26 UTC+08:00
  *****************************************************/
 
 import java.util.Scanner;
@@ -332,7 +332,7 @@ public class WhileLoopDemo2 {
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-21 15:56:40 UTC+08:00
+ * @datetime: 2024-07-21 15:56:40 UTC+08:00
  *****************************************************/
 
 /**
@@ -360,7 +360,7 @@ public class DoWhileLoopDemo {
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-21 16:52:34 UTC+08:00
+ * @datetime: 2024-07-21 16:52:34 UTC+08:00
  *****************************************************/
 
 import java.util.Scanner;
@@ -393,7 +393,7 @@ public class ForLoopDemo {
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-21 17:03:03 UTC+08:00
+ * @datetime: 2024-07-21 17:03:03 UTC+08:00
  *****************************************************/
 
 import java.util.Scanner;
