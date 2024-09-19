@@ -2,11 +2,11 @@
 """ 
 @File: main.py
 @Editor: PyCharm
-@Author: Alice(From Chengdu.China)
+@author: Lionel Johnson
 @HomePage: https://github.com/AliceEngineerPro
 @OS: Windows 11 Professional Workstation 22H2
 @Environment: Python3.9 (FairyAdministrator)
-@CreatedTime: 2023/3/2 22:38
+@datetime: 2023-12-31 00:00:00 UTC+08:00
 """
 
 from util import del_file

@@ -4,7 +4,7 @@
 @author: Lionel Johnson
 @contact: https://fairy.host
 @organization: https://github.com/FairylandFuture
-@since: 2024-06-21 23:48:48 UTC+8
+@datetime: 2024-06-21 23:48:48 UTC+08:00
 """
 
 from pathlib import Path

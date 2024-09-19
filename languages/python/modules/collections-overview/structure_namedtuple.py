@@ -4,7 +4,7 @@
 @author: Lionel Johnson
 @contact: https://fairy.host
 @organization: https://github.com/FairylandFuture
-@since: 2024-07-22 00:25:41 UTC+08:00
+@datetime: 2024-07-22 00:25:41 UTC+08:00
 """
 
 from collections import namedtuple

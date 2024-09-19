@@ -63,7 +63,7 @@ if(布尔表达式 1){
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-20 13:33:02 UTC+08:00
+ * @datetime: 2024-07-20 13:33:02 UTC+08:00
  *****************************************************/
 
 /**
@@ -115,7 +115,7 @@ if(布尔表达式 1){
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: @since: 2024-07-20 20:31:42 UTC+08:00
+ * @datetime: 2024-07-20 20:31:42 UTC+08:00
  *****************************************************/
 
 import java.util.Random;
@@ -165,7 +165,7 @@ public class IfelseDemo {
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: 2024-07-21 01:38:07 UTC+8
+ * @datetime: 2024-07-21 01:38:07 UTC+08:00
  ******************************************************/
 
 import java.util.Scanner;
@@ -254,7 +254,7 @@ switch case 语句有如下规则：
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: 2024-07-21 01:59:07 UTC+8
+ * @datetime: 2024-07-21 01:59:07 UTC+08:00
  ******************************************************/
 
 /**
@@ -291,7 +291,7 @@ public class SwitchDemo {
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: 2024-07-21 12:00:19 UTC+8
+ * @datetime: 2024-07-21 12:00:19 UTC+08:00
  ******************************************************/
 
 import java.lang.reflect.Member;
@@ -367,4 +367,3 @@ public class SwitchDemo2 {
     }
 }
 ```
-

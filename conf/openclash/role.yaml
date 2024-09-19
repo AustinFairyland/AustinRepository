@@ -2,7 +2,7 @@
 # @author: Lionel Johnson
 # @contact: https://fairy.host
 # @organization: https://github.com/FairylandFuture
-# @since: 2024-08-07 13:07:14 UTC+8
+# @datetime: 2024-08-07 13:07:14 UTC+08:00
 ---
 rules:
   - SRC-IP-CIDR,10.0.0.1/32,DIRECT  # 局域网直连

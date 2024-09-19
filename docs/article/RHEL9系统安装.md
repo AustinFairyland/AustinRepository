@@ -6,7 +6,7 @@
 >
 > @Editor: PyCharm
 >
-> @Author: [Austin (From Chengdu.China)](https://fairy.host)
+> @author: [Lionel Johnson](https://fairy.host)  
 >
 > @HomePage: [AustinFairyland](https://github.com/AustinFairyland)
 >
@@ -109,4 +109,3 @@
 # 3. 完成安装
 
 ![image](https://picsur.service.fairy.host/i/8d19776d-ea42-4146-a638-cfcd8930caf9.jpg)
-

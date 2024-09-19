@@ -6,7 +6,7 @@
 >
 > @Editor: PyCharm
 >
-> @Author: [Austin (From Chengdu.China)](https://fairy.host)
+> @author: [Lionel Johnson](https://fairy.host)  
 >
 > @HomePage: [AustinFairyland](https://github.com/AustinFairyland)
 >

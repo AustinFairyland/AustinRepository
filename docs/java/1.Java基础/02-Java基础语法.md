@@ -16,7 +16,7 @@
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: 2024-07-19 21:45:06 UTC+08:00
+ * @datetime: 2024-07-19 21:45:06 UTC+08:00
  ******************************************************/
 
 /**
@@ -98,7 +98,7 @@ Java 5.0引入了枚举，枚举限制变量只能是预先设定好的值。使
    * @author: Lionel Johnson
    * @contact: https://fairy.host
    * @organization: https://github.com/FairylandFuture
-   * @since: 2024-07-19 21:45:06 UTC+08:00
+   * @datetime: 2024-07-19 21:45:06 UTC+08:00
    ******************************************************/
   
   /**
@@ -217,7 +217,7 @@ Java 5.0引入了枚举，枚举限制变量只能是预先设定好的值。使
  * @author: Lionel Johnson
  * @contact: https://fairy.host
  * @organization: https://github.com/FairylandFuture
- * @since: 2024-07-19 21:45:06 UTC+08:00
+ * @datetime: 2024-07-19 21:45:06 UTC+08:00
  ******************************************************/
 
 /**
@@ -238,4 +238,3 @@ public class Main {
 ## Java 空行
 
 空白行，或者只有注释的行，Java编译器都会忽略掉。
-
