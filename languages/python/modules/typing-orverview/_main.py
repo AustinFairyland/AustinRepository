@@ -7,6 +7,8 @@
 @datetime: 2024-09-23 14:08:04 UTC+08:00
 """
 
+# ==== python 3.11 ====
+
 # 抽象基类
 # 字节串
 from typing import ByteString  # 字节串的抽象基类, ByteString 包括不可变的字节类, 如 bytes 和 bytearray
@@ -89,10 +91,3 @@ from typing import SupportsFloat  # 代表一个对象可以转换为浮点数, 
 from typing import SupportsIndex  # 代表一个对象可以作为索引, 实现该协议的对象需要实现 __index__ 方法
 from typing import SupportsInt  # 代表一个对象可以转换为整数, 实现该协议的对象需要实现 __int__ 方法
 from typing import SupportsRound  # 代表一个对象可以取整, 实现该协议的对象需要实现 __round__ 方法
-
-from typing import TypedDict, Required, final
-
-
-class MyDict(TypedDict):
-    name: Required[str]
-    age: int
