@@ -13,10 +13,12 @@ import json  # json 信息
 import logging  # 日志文件
 import os  # 操作系统交互
 import pickle  # 序列化, 反序列化
-import random  # 随机模块
+import random  # 随机模块 不安全的
+import secrets  # 随机模块 安全的
 import re  # 正则表达式, 字符串的匹配
 import shelve  # 序列化模块, 比 pickle简单, 只有open一个函数, 返回字典, 可读写, key为字符串, value为python支持的所有类型
-import sys  # 解释器交互
+import sys  #
+
 # 系统模块
 import time  # 时间
 import xml.etree.ElementTree as ET  # xml 模块
@@ -112,6 +114,8 @@ def sys_module():
     massage = '\n↑↑↑以上为sys模块\n'
     return massage
 
+
+# json, yaml, yml, xml
 
 def json_module():
     dic = {'name': 'jack'}

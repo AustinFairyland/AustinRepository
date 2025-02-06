@@ -1,14 +1,14 @@
-# public
+### public ###
 .idea
 
-# dev
+### dev ###
 log[s]
 data
 temp/*
 !temp/*.md
 tmp
 
-# custom
+### custom ###
 build
 dist
 *-dev.yaml
@@ -17,8 +17,9 @@ dev-*.yaml
 dev.*.yaml
 /languages/java/**/out
 
-# java custom
+### java ###
 *.iml
+target
 
-# work
+### work ###
 work
