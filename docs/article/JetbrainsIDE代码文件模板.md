@@ -314,7 +314,7 @@ spec:
 ## Python Script
 
 ```python
-# coding: utf-8
+# coding: UTF-8
 """
 @software: ${PRODUCT_NAME}
 @author: Lionel Johnson
@@ -328,7 +328,7 @@ spec:
 ## Python Stub
 
 ```python
-# coding: utf-8
+# coding: UTF-8
 """
 @software: ${PRODUCT_NAME}
 @author: Lionel Johnson
@@ -342,7 +342,7 @@ spec:
 ## Python Unit Test
 
 ```python
-# coding: utf-8
+# coding: UTF-8
 """
 @software: ${PRODUCT_NAME}
 @author: Lionel Johnson
@@ -365,7 +365,7 @@ if __name__ == '__main__':
 ## Python Setup Script
 
 ```python
-# coding: utf-8
+# coding: UTF-8
 """
 @software: ${PRODUCT_NAME}
 @author: Lionel Johnson
@@ -392,7 +392,7 @@ setup(
 ## Python Flask Main
 
 ```python
-# coding: utf-8
+# coding: UTF-8
 """
 @software: ${PRODUCT_NAME}
 @author: Lionel Johnson
@@ -614,8 +614,6 @@ public class ${NAME} {
 ## Interface
 
 ```java
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
-#parse("File Header.java")
 /*****************************************************
  * @software: ${PRODUCT_NAME}
  * @author: Lionel Johnson
@@ -623,6 +621,8 @@ public class ${NAME} {
  * @organization: https://github.com/FairylandFuture
  * @datetime: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+08:00
  *****************************************************/
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+#parse("File Header.java")
 
 /**
  *@author Lionel Johnson
@@ -635,8 +635,6 @@ public interface ${NAME} {
 ## Enum
 
 ```java
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
-#parse("File Header.java")
 /*****************************************************
  * @software: ${PRODUCT_NAME}
  * @author: Lionel Johnson
@@ -644,6 +642,8 @@ public interface ${NAME} {
  * @organization: https://github.com/FairylandFuture
  * @datetime: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+08:00
  *****************************************************/
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+#parse("File Header.java")
 
 /**
  *@author Lionel Johnson
@@ -656,8 +656,6 @@ public enum ${NAME} {
 ## Record
 
 ```java
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
-#parse("File Header.java")
 /*****************************************************
  * @software: ${PRODUCT_NAME}
  * @author: Lionel Johnson
@@ -665,6 +663,8 @@ public enum ${NAME} {
  * @organization: https://github.com/FairylandFuture
  * @datetime: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+08:00
  *****************************************************/
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+#parse("File Header.java")
 
 /**
  *@author Lionel Johnson
@@ -677,8 +677,6 @@ public record ${NAME}() {
 ## AnnotationType
 
 ```java
-#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
-#parse("File Header.java")
 /*****************************************************
  * @software: ${PRODUCT_NAME}
  * @author: Lionel Johnson
@@ -686,6 +684,8 @@ public record ${NAME}() {
  * @organization: https://github.com/FairylandFuture
  * @datetime: ${YEAR}-${MONTH}-${DAY} ${HOUR}:${MINUTE}:${SECOND} UTC+08:00
  *****************************************************/
+#if (${PACKAGE_NAME} && ${PACKAGE_NAME} != "")package ${PACKAGE_NAME};#end
+#parse("File Header.java")
 
 /**
  *@author Lionel Johnson
