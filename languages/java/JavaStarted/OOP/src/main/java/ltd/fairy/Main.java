@@ -10,6 +10,9 @@ package ltd.fairy;
 import ltd.fairy.OOP.GirlFriend;
 import ltd.fairy.OOP.Phone;
 import ltd.fairy.bean.Student;
+import ltd.fairy.extend.Ragdoll;
+
+import org.openjdk.jol.info.ClassLayout;
 
 /**
  * @author Lionel Johnson
@@ -35,8 +38,18 @@ public class Main {
         student.study();
     }
 
+    static void testRagdoll() {
+        Ragdoll ragdoll = new Ragdoll("布偶猫");
+        ragdoll.eat("猫粮");
+        ragdoll.drink();
+        ragdoll.catchMouse();
+
+        System.out.println(ClassLayout.parseInstance(ragdoll).toPrintable());
+    }
+
     public static void main(String[] args) {
 //        testPhone();
-        testStudent();
+//        testStudent();
+        testRagdoll();
     }
 }
